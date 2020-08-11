@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useContext } from 'react'
 
-const GlobalStateContext = createContext()
-const GlobalDispatchContext = createContext()
+const GlobalStateContext = createContext(defaultState)
+const GlobalDispatchContext = createContext(defaultState)
 
 const globalReducer = (state, action) => {
   switch (action.type) {
