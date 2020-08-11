@@ -1,9 +1,9 @@
 {
-  "name": "awwwards rebuilt",
+  "name": "awwwards-rebuilt",
   "private": true,
   "description": "clone of a website from awwards",
   "version": "0.1.0",
-  "author": "roman maru",
+  "author": "roman-maru",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "framer-motion": "^1.10.2",

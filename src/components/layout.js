@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
     top: `${hamburgerPosition.y}px`
   }
 
-  const { currentTheme, cursorStyles } = useGlobalStateContext()
+  const { cursorStyles,  currentTheme} = useGlobalStateContext()
   const dispatch = useGlobalDispatchContext()
 
   const onCursor = cursorType => {
