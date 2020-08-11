@@ -15,10 +15,11 @@ import { useGlobalStateContext } from '../../context/globalContext'
 
 const HomeBanner = () => {
   let canvas = useRef(null)
-  const size = useWindowSize()
+  
   const { currentTheme } = useGlobalStateContext()
 
   useEffect(() => {
+    const size = useWindowSize()
     let renderingElement = canvas.current
     let drawingElement = renderingElement.cloneNode()
 
