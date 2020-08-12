@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useContext } from 'react'
 
 const defaulState = {
-  currentTheme: '',
+  currentTheme: 'light',
   cursorType: false,
   cursorStyles: []
 }
