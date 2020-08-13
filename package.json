@@ -25,7 +25,8 @@
     "react-intersection-observer": "^8.26.1",
     "ssr-window": "^2.0.0",
     "styled-components": "^5.0.1",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "window": "^4.2.7"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
