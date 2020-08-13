@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 
-function useWindowSize({ width, height }) {
+function useWindowSize() {
   if (typeof window !== 'undefined') {
     function getSize() {
       return {
