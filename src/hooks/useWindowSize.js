@@ -1,19 +1,12 @@
 import { useState, useEffect } from 'react'
+import {window} from 'ssr-window'
 export default function useWindowSize() {
   function getSize() {
-    if (typeof window !== 'undefined') {
-      return {
-        width: window.innerWidth,
-        height: window.innerHeight
-      }
-    } else {
-      return {
-        width: 0,
-        height: 0
-      }
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
     }
   }
-
   const [windowSize, setWindowSize] = useState(getSize)
 
   useEffect(() => {
@@ -25,4 +18,4 @@ export default function useWindowSize() {
     return () => window.removeEventListener('resize', handleResize)
   })
   return windowSize
-} 
+}
