@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import {window} from 'ssr-window'
-export default function useWindowSize() {
+import {withWindowSize} from 'react-fns'
+
+function useWindowSize({width, height}) {
   function getSize() {
     return {
-      width: window.innerWidth,
-      height: window.innerHeight
+      width: width,
+      height: height
     }
   }
   const [windowSize, setWindowSize] = useState(getSize)
@@ -19,3 +20,5 @@ export default function useWindowSize() {
   })
   return windowSize
 }
+
+export default withWindowSize(useWindowSize)
