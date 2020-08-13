@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import Window from 'window'
-const { window} = new Window()
+
 function useWindowSize() {
     function getSize() {
       return {
